@@ -1,0 +1,71 @@
+<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Design.PreviewWith>
+        <StackPanel>
+            <Border Classes="btn-primary">
+                <TextBlock>Sample text</TextBlock>
+            </Border>    
+        </StackPanel>
+    </Design.PreviewWith>
+    
+    <!-- Add Styles Here -->
+    <Style Selector="Border.btn-primary">
+        <Setter Property="ClipToBounds" Value="True"></Setter>
+        <Setter Property="CornerRadius" Value="3"></Setter>
+        <Setter Property="TextBlock.Foreground" Value="White"></Setter>
+        <Setter Property="Background" Value="#007bff"></Setter>
+        <Setter Property="Padding" Value="6" />
+    </Style>
+    <Style Selector="Border.btn-primary:pointerover">
+        <Setter Property="Background" Value="#0052aa"></Setter>
+    </Style>
+    
+    <Style Selector="Border.btn-success">
+        <Setter Property="ClipToBounds" Value="True"></Setter>
+        <Setter Property="CornerRadius" Value="3"></Setter>
+        <Setter Property="TextBlock.Foreground" Value="White"></Setter>
+        <Setter Property="Background" Value="#28a745"></Setter>
+        <Setter Property="Padding" Value="6" />
+    </Style>
+    <Style Selector="Border.btn-success:pointerover">
+        <Setter Property="Background" Value="#208637"></Setter>
+    </Style>
+    
+    <Style Selector="Border.btn-success">
+        <Setter Property="ClipToBounds" Value="True"></Setter>
+        <Setter Property="CornerRadius" Value="3"></Setter>
+        <Setter Property="TextBlock.Foreground" Value="White"></Setter>
+        <Setter Property="Background" Value="#dc3545"></Setter>
+        <Setter Property="Padding" Value="6" />
+    </Style>
+    <Style Selector="Border.btn-success:pointerover">
+        <Setter Property="Background" Value="#b02a37"></Setter>
+    </Style>
+    
+    <Style Selector="Border.side-nav-btn">
+        <Setter Property="ClipToBounds" Value="True"></Setter>
+        <Setter Property="CornerRadius" Value="3"></Setter>
+        <Setter Property="TextBlock.Foreground" Value="Black"></Setter>
+        <Setter Property="Background" Value="#FFFD8C"></Setter>
+        <Setter Property="Padding" Value="6" />
+    </Style>
+    <Style Selector="Border.btn-success:pointerover">
+        <Setter Property="Background" Value="#b02a37"></Setter>
+    </Style>
+    
+    <Style Selector="Border.side-nav-btn.active">
+        <Setter Property="ClipToBounds" Value="True"></Setter>
+        <Setter Property="CornerRadius" Value="3"></Setter>
+        <Setter Property="TextBlock.Foreground" Value="Black"></Setter>
+        <Setter Property="Background" Value="#FFC436"></Setter>
+        <Setter Property="Padding" Value="6" />
+    </Style>
+    <Style Selector="Border.btn-success:pointerover">
+        <Setter Property="Background" Value="#b02a37"></Setter>
+    </Style>
+    
+    <Style Selector="StackPanel.side-nav-bar">
+        <Setter Property="Background" Value="#FFB6D9"></Setter>
+    </Style>
+</Styles>
+

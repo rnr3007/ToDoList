@@ -5,12 +5,21 @@
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              xmlns:vm="using:ToDoList.ViewModels.ToDoView"
              x:Class="ToDoList.Views.ToDo.ToDoListView"
-             x:DataType="vm:ToDoListView">
+             x:DataType="vm:ToDoListVM"
+             x:Name="Controller">
     <DockPanel>
         <Button DockPanel.Dock="Bottom"
                 HorizontalAlignment="Stretch"
-                HorizontalContentAlignment="Center">
-            Add Activity
+                HorizontalContentAlignment="Center"
+                Background="#7F9C96">
+            <TextBlock Foreground="Black">Add Activity</TextBlock>
+        </Button>
+        <Button DockPanel.Dock="Bottom"
+                HorizontalAlignment="Stretch"
+                HorizontalContentAlignment="Center"
+                Background="#7F9C96"
+                Click="GoToHome">
+            Back
         </Button>
         <ItemsControl ItemsSource="{Binding ToDoList}">
             <ItemsControl.ItemTemplate>

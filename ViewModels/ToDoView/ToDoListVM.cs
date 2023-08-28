@@ -5,11 +5,11 @@ using ToDoList.Models;
 
 namespace ToDoList.ViewModels.ToDoView;
 
-public class ToDoListView
+public class ToDoListVM
 {
     public ObservableCollection<ToDo> ToDoList { get; set; } 
 
-    public ToDoListView(IEnumerable<ToDo> toDoList)
+    public ToDoListVM(IEnumerable<ToDo> toDoList)
     {
         ToDoList = new ObservableCollection<ToDo>(toDoList);
     }

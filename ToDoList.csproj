@@ -22,6 +22,7 @@
   <ItemGroup>
     <UpToDateCheckInput Remove="Views\MainWindow.axaml" />
     <UpToDateCheckInput Remove="Views\ToDos.axaml" />
+    <UpToDateCheckInput Remove="Views\Home\HomeView.axaml" />
   </ItemGroup>
 
 

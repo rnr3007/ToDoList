@@ -1,0 +1,49 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="ToDoList.Views.Home.HomeView"
+             x:Name="Controller"
+             xmlns:sidebar="clr-namespace:ToDoList.Views.Shared">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="3*" />
+        </Grid.ColumnDefinitions>
+        
+        <sidebar:Sidebar></sidebar:Sidebar>
+        <DockPanel Grid.Column="1">
+            <StackPanel DockPanel.Dock="Top"
+                    Margin="10"
+                    HorizontalAlignment="Stretch"
+                    ClipToBounds="True">
+                <Border CornerRadius="5"
+                        ClipToBounds="True">
+                    <TextBlock Padding="5" 
+                               UseLayoutRounding="True"
+                               TextAlignment="Center"
+                               FontWeight="Bold"
+                               FontSize="20">To Do List App</TextBlock>
+                </Border>
+                <Border CornerRadius="5"
+                        ClipToBounds="True"
+                        Margin="0 5">
+                    <TextBlock Padding="5" 
+                               UseLayoutRounding="True"
+                               TextAlignment="Center">
+                        Welcome to "To Do List" app
+                    </TextBlock>
+                </Border>
+            </StackPanel>
+            <StackPanel DockPanel.Dock="Bottom"
+                        VerticalAlignment="Center">
+                <Border Classes="btn-primary"
+                        HorizontalAlignment="Center"
+                        Tapped="GoToListOfToDo">
+                    <TextBlock HorizontalAlignment="Center">View List</TextBlock>
+                </Border>
+            </StackPanel>
+        </DockPanel>
+    </Grid>
+</UserControl>

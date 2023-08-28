@@ -6,12 +6,12 @@ namespace ToDoList.ViewModels;
 
 public class MainWindowView
 {
-    public ToDoListView ToDoList { get; set; }
+    public ToDoListVM ToDoList { get; set; }
     
     public MainWindowView()
     {
         var service = new ToDoService();
-        ToDoList = new ToDoListView(service.GetToDos());
+        ToDoList = new ToDoListVM(service.GetToDos());
     }
 }
 
