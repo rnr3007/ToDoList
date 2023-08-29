@@ -1,3 +1,4 @@
+using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Interactivity;
 using ToDoList.Services;
@@ -13,10 +14,10 @@ public partial class ToDoListView : UserControl
         InitializeComponent();
         var service = new ToDoService();
         DataContext = new ToDoListVM(service.GetToDos());
+        
     }
 
     private void GoToHome(object? sender, RoutedEventArgs e)
     {
-        Controller.Content = new HomeView();
     }
 }

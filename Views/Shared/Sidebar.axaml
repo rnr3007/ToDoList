@@ -5,6 +5,11 @@
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="ToDoList.Views.Shared.Sidebar">
     <StackPanel Classes="side-nav-bar">
-        <TextBlock>Sample Text</TextBlock>
+        <Border Classes="side-nav-btn" Tapped="GoToHome">
+            <TextBlock>Home</TextBlock>
+        </Border>
+        <Border Classes="side-nav-btn" Tapped="GoToListOfToDo">
+            <TextBlock>To Do List</TextBlock>
+        </Border>
     </StackPanel>
 </UserControl>

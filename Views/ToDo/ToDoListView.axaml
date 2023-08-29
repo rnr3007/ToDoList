@@ -5,8 +5,7 @@
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              xmlns:vm="using:ToDoList.ViewModels.ToDoView"
              x:Class="ToDoList.Views.ToDo.ToDoListView"
-             x:DataType="vm:ToDoListVM"
-             x:Name="Controller">
+             x:DataType="vm:ToDoListVM">
     <DockPanel>
         <Button DockPanel.Dock="Bottom"
                 HorizontalAlignment="Stretch"
