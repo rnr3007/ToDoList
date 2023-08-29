@@ -14,7 +14,7 @@ public partial class ToDoListView : UserControl
         InitializeComponent();
         var service = new ToDoService();
         DataContext = new ToDoListVM(service.GetToDos());
-        
+        Sidebar.ToDoListNav.Classes.Add("active");
     }
 
     private void GoToHome(object? sender, RoutedEventArgs e)

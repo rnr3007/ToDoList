@@ -12,7 +12,7 @@
             <ColumnDefinition Width="3*" />
         </Grid.ColumnDefinitions>
         
-        <sidebar:Sidebar />
+        <sidebar:Sidebar x:Name="Sidebar"/>
         
         <DockPanel Grid.Column="1">
             <StackPanel DockPanel.Dock="Top"
