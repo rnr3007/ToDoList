@@ -7,4 +7,7 @@
         Title="To Do List"
         x:Name="Controller" 
         Background="Moccasin">
+        <!-- <StackPanel> -->
+        <!--         <Image Source="../Assets/icon.png"></Image> -->
+        <!-- </StackPanel> -->
 </Window>

@@ -3,7 +3,7 @@
              x:Class="ToDoList.App"
              RequestedThemeVariant="Light">
              <!-- "Default" ThemeVariant follows system theme variant. "Dark" or "Light" are other available options. -->
-
+    
     <Application.Styles>
         <FluentTheme />
         <StyleInclude Source="Views/Shared/Styles.axaml" />

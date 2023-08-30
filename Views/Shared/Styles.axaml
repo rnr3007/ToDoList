@@ -64,8 +64,6 @@
     </Style>
     
     <Style Selector="Border.side-nav-btn.active">
-        <Setter Property="ClipToBounds" Value="True" />
-        <Setter Property="CornerRadius" Value="3" />
         <Setter Property="TextBlock.Foreground" Value="Black" />
         <Setter Property="Background" Value="#FFC436" />
     </Style>
