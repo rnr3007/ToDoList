@@ -27,7 +27,7 @@
 
 
   <ItemGroup>
-    <Compile Update="Views\ToDo\ToDoListView.axaml.cs">
+    <Compile Update="Views\ToDo\ToDoMainView.axaml.cs">
       <DependentUpon>ToDoListView.axaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>

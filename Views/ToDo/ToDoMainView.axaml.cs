@@ -7,14 +7,14 @@ using ToDoList.Views.Home;
 
 namespace ToDoList.Views.ToDo;
 
-public partial class ToDoListView : UserControl
+public partial class ToDoMainView : UserControl
 {
-    public ToDoListView()
+    public ToDoMainView()
     {
         InitializeComponent();
         var service = new ToDoService();
-        DataContext = new ToDoListVM(service.GetToDos());
         Sidebar.ToDoListNav.Classes.Add("active");
+        ToDoContent.Children.Add(new ViewList());
     }
 
     private void GoToHome(object? sender, RoutedEventArgs e)

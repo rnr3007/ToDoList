@@ -24,6 +24,6 @@ public partial class Sidebar : UserControl
 
     private void GoToListOfToDo(object? sender, TappedEventArgs e)
     {
-        desktop.MainWindow.Content = new ToDoListView();
+        desktop.MainWindow.Content = new ToDoMainView();
     }
 }

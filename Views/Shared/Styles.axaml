@@ -16,6 +16,8 @@
         <Setter Property="ClipToBounds" Value="True" />
         <Setter Property="CornerRadius" Value="3" />
         <Setter Property="TextBlock.Foreground" Value="White" />
+        <Setter Property="TextBlock.TextAlignment" Value="Center" />
+        <Setter Property="HorizontalAlignment" Value="Stretch" />
         <Setter Property="Background" Value="#007bff" />
         <Setter Property="Padding" Value="6" />
     </Style>
@@ -28,6 +30,8 @@
         <Setter Property="ClipToBounds" Value="True" />
         <Setter Property="CornerRadius" Value="3" />
         <Setter Property="TextBlock.Foreground" Value="White" />
+        <Setter Property="TextBlock.TextAlignment" Value="Center" />
+        <Setter Property="HorizontalAlignment" Value="Stretch" />
         <Setter Property="Background" Value="#28a745" />
         <Setter Property="Padding" Value="6" />
     </Style>
@@ -40,6 +44,8 @@
         <Setter Property="ClipToBounds" Value="True" />
         <Setter Property="CornerRadius" Value="3" />
         <Setter Property="TextBlock.Foreground" Value="White" />
+        <Setter Property="TextBlock.TextAlignment" Value="Center" />
+        <Setter Property="HorizontalAlignment" Value="Stretch" />
         <Setter Property="Background" Value="#dc3545" />
         <Setter Property="Padding" Value="6" />
     </Style>
@@ -70,6 +76,39 @@
     
     <Style Selector="StackPanel.side-nav-bar">
         <Setter Property="Background" Value="#FFB6D9" />
+    </Style>
+    
+    <Style Selector="TextBlock.h1">
+        <Setter Property="Padding" Value="5" />
+        <Setter Property="TextAlignment" Value="Center" />
+        <Setter Property="HorizontalAlignment" Value="Center" />
+        <Setter Property="FontWeight" Value="Bold" />
+        <Setter Property="FontSize" Value="20" />
+    </Style>
+    
+    <Style Selector="TextBlock.h3">
+        <Setter Property="TextAlignment" Value="Center" />
+        <Setter Property="FontSize" Value="20" />
+    </Style>
+    
+    <Style Selector="DockPanel.content">
+        <Setter Property="Margin" Value="10" />
+    </Style>
+    
+    <Style Selector="StackPanel.content-head">
+        <Setter Property="DockPanel.Dock" Value="Top" />
+        <Setter Property="Margin" Value="10 0" />
+    </Style>
+    
+    <Style Selector="StackPanel.content-body">
+        <Setter Property="DockPanel.Dock" Value="Top" />
+        <Setter Property="Margin" Value="10" />
+    </Style>
+    
+    <Style Selector="StackPanel.content-foot">
+        <Setter Property="DockPanel.Dock" Value="Bottom" />
+        <Setter Property="Margin" Value="10 0" />
+        <Setter Property="VerticalAlignment" Value="Bottom" />
     </Style>
 </Styles>
 

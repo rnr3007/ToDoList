@@ -1,0 +1,35 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="clr-namespace:ToDoList.ViewModels.ToDoView"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="ToDoList.Views.ToDo.ViewList"
+             x:DataType="vm:ToDoListVM"
+             x:Name="ToDoContent">
+    <DockPanel Classes="content">
+        <StackPanel Classes="content-head">
+            <TextBlock Classes="h1">To Do List</TextBlock>
+        </StackPanel>
+        
+        <StackPanel Classes="content-body">
+            <ItemsControl ItemsSource="{Binding ToDoList}"
+                          DockPanel.Dock="Top">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <CheckBox Margin="5"
+                                  IsChecked="{Binding IsDone}"
+                                  Content="{Binding Name}"/>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </StackPanel>
+        
+        <StackPanel Classes="content-foot">
+            <Border Classes="btn-primary"
+                    Tapped="GoToCreate">
+                <TextBlock HorizontalAlignment="Center">Add to-do</TextBlock>
+            </Border>
+        </StackPanel>
+    </DockPanel>
+</UserControl>

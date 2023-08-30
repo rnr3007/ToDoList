@@ -1,0 +1,29 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             xmlns:vm="clr-namespace:ToDoList.ViewModels.ToDoView"
+             x:Class="ToDoList.Views.ToDo.ViewCreate"
+             x:DataType="vm:ToDoCreateVM"
+             x:Name="ToDoContent">
+    <DockPanel Classes="content">
+        <StackPanel Classes="content-head">
+            <TextBlock Classes="h1">Add To Do</TextBlock>
+        </StackPanel>
+        <StackPanel Classes="content-body">
+            <TextBox AcceptsReturn="True"
+                     Text="{Binding Name}" 
+                     Watermark="Insert your task"/>
+        </StackPanel>
+        <StackPanel Classes="content-foot"
+                    Spacing="5">
+            <Border Classes="btn-primary">
+                <TextBlock>Add Task</TextBlock>
+            </Border>
+            <Border Classes="btn-primary" Tapped="BackToList">
+                <TextBlock>Back</TextBlock>
+            </Border>
+        </StackPanel>
+    </DockPanel>
+</UserControl>

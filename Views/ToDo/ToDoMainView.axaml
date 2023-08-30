@@ -3,8 +3,9 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-             x:Class="ToDoList.Views.Home.HomeView"
-             x:Name="Controller"
+             xmlns:vm="using:ToDoList.ViewModels.ToDoView"
+             x:Class="ToDoList.Views.ToDo.ToDoMainView"
+             x:DataType="vm:ToDoListVM"
              xmlns:sidebar="clr-namespace:ToDoList.Views.Shared">
     <Grid>
         <Grid.ColumnDefinitions>
@@ -14,16 +15,7 @@
         
         <sidebar:Sidebar x:Name="Sidebar"/>
         
-        <DockPanel Grid.Column="1"
-                   Classes="content">
-            <StackPanel Classes="content-head">
-                <TextBlock Classes="h1">To Do List App</TextBlock>
-                <TextBlock Classes="h3">Welcome to the "To Do List" app</TextBlock>
-            </StackPanel>
-            <StackPanel Classes="content-body"
-                        VerticalAlignment="Center">
-                <Image Width="300" Height="300" Source="../../Assets/icon.png"/>
-            </StackPanel>
-        </DockPanel>
+        <Panel Grid.Column="1" x:Name="ToDoContent">
+        </Panel>
     </Grid>
 </UserControl>
